@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<link rel="stylesheet" href="https://openlayers.org/en/v4.4.2/css/ol.css" type="text/css">
+	<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+	<script src="https://openlayers.org/en/v4.4.2/build/ol.js"></script>
+
+</head>
+
+<body>
+
+    <div id="map" class="map"></div>
+
+	<form name='formu'>
+
+		<label>angle1</label>: <input id="ang1" type="text" name="angle1" />
+    <label>angle2</label>: <input id="ang2" type="text" name="angle2" />
+
+		<label>distance en metres</label>: <input id="dist" type="text" name="distance" />
+		<input type='button' onClick='dessin()' value='dessiner angle' ><br>
+
+	</form>
+	<script type="text/javascript" src="anglejs.js"> </script>
+	
+	<div id="docs">
+        <p>Le champs Angle sert a indiquer l'angle par rapport au nord en degree.</p>
+        <p>Le champs Distance en metres pour indiquer la taille des segments.</p>
+        <p>Apres avoir remplie les deux champs, cliquez sur le bouton ''dessiner angle'' puis sur l'endroit voulu sur la map.</p>
+
+    </div>
+</body>
+</html>
